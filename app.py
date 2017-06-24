@@ -7,6 +7,9 @@ Bootstrap(app)
 @app.route("/")
 def main():
     return render_template('index.html')
+@app.route("/create")
+def project_form():
+    return render_template('create.html')
 
 if __name__ == "__main__":
     app.run()
