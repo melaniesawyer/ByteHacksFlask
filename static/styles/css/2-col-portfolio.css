@@ -6,10 +6,15 @@
 
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
+    background-color: #00171F;
 }
 
 .portfolio-item {
     margin-bottom: 25px;
+}
+
+.col-md-6.portfolio-item {
+    border-radius: 5px; 
 }
 
 footer {
