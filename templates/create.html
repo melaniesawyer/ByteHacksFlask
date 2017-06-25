@@ -31,92 +31,62 @@
 		<div class="row">
 			<div class="col-lg-12">
 				<div class="page-header">HackerHelpers
-					<small>Use your tech skills for good</small>
+					<small>Get help from local hackers!</small>
 				</div>
 			</div>
 		</div>
 	
 	<form>
   <div class="form-group">
-    <label for="exampleInputEmail1">Email address</label>
-    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+	  <label for="exampleInputEmail1">What's the best email to reach you at?</label>
+    <input type="email" class="form-control" id="email" aria-describedby="emailHelp" placeholder="Enter email">
     <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
   </div>
   <div class="form-group">
-    <label for="exampleInputPassword1">Password</label>
+    <label for="exampleInputPassword1">Organization Name</label>
     <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
   </div>
   <div class="form-group">
-    <label for="exampleSelect1">Example select</label>
-    <select class="form-control" id="exampleSelect1">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+	  <label for="projectName"> Project Title </label>
+	  <input type="text" class=form-control" id="project_name">
+  </div>
+  <div class="form-horizontal">
+  <div class="form-group">
+  <div class="col-md-6">
+	  <label for="projectDescription"> Describe your project to us. Lots of detail, please! </label>
+	  <input type="textarea" class="form-control" rows="10"id="project_description">
+  </div>
+  </div>
+  </div>
+  <div class="form-group">
+    <label for="exampleSelect2">Let's learn a little more about your organization. Select all that apply</label>
+    <select multiple class="form-control" id="tags">
+      <option>women's shelters</option>
+      <option>homelessness</option>
+      <option>hunger</option>
+      <option>education</option>
+      <option>environment</option>
+      <option>political</option>
+      <option>immigration</option>
+      <option>religious</option>
+      <option>animals</option>
     </select>
   </div>
-  <div class="form-group">
-    <label for="exampleSelect2">Example multiple select</label>
-    <select multiple class="form-control" id="exampleSelect2">
-      <option>1</option>
-      <option>2</option>
-      <option>3</option>
-      <option>4</option>
-      <option>5</option>
+<div class="form-group">
+	<label for="experience\">What level of experience are you looking for?</label>
+    <select class="form-control" id="level">
+      <option>beginner</option>
+      <option>intermediate</option>
+      <option>advanced</option>
     </select>
-  </div>
-  <div class="form-group">
-    <label for="exampleTextarea">Example textarea</label>
-    <textarea class="form-control" id="exampleTextarea" rows="3"></textarea>
-  </div>
-  <div class="form-group">
-    <label for="exampleInputFile">File input</label>
-    <input type="file" class="form-control-file" id="exampleInputFile" aria-describedby="fileHelp">
-    <small id="fileHelp" class="form-text text-muted">This is some placeholder block-level help text for the above input. It's a bit lighter and easily wraps to a new line.</small>
-  </div>
-  <fieldset class="form-group">
-    <legend>Radio buttons</legend>
-    <div class="form-check">
-      <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios1" value="option1" checked>
-        Option one is this and that&mdash;be sure to include why it's great
-      </label>
-    </div>
-    <div class="form-check">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios2" value="option2">
-        Option two can be something else and selecting it will deselect option one
-      </label>
-    </div>
-    <div class="form-check disabled">
-    <label class="form-check-label">
-        <input type="radio" class="form-check-input" name="optionsRadios" id="optionsRadios3" value="option3" disabled>
-        Option three is disabled
-      </label>
-    </div>
-  </fieldset>
-  <div class="form-check">
-    <label class="form-check-label">
-      <input type="checkbox" class="form-check-input">
-      Check me out
-    </label>
-  </div>
-  <button type="submit" class="btn btn-primary">Submit</button>
 
-	<input class="form-control form-control-lg" type="text" placeholder=".form-control-lg">
-<input class="form-control" type="text" placeholder="Default input">
-<input class="form-control form-control-sm" type="text" placeholder=".form-control-sm">
+  <div class="form-group">
+    <label for="logo">If you have a logo, upload it here</label>
+    <input type="file" class="form-control-file" id="logo" aria-describedby="fileHelp">
+  </div>
+     <button type="submit" class="btn btn-primary">Submit</button>
+
 </form>
-        <!-- Footer -->
-        <footer>
-            <div class="row">
-                <div class="col-lg-12">
-                    <p>Copyright &copy; Your Website 2014</p>
-                </div>
-            </div>
-            <!-- /.row -->
-        </footer>
 
     </div>
     <!-- /.container -->
@@ -126,6 +96,7 @@
 
     <!-- Bootstrap Core JavaScript -->
     <script src="{{ url_for('static', filename='js/bootstrap.min.js') }}"</script>
+
     </div>
 </body>
 
